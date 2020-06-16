@@ -1,0 +1,24 @@
+--cpu Cortex-M0
+"flashing\startup_stm32f072xb.o"
+"flashing\system_stm32f0xx.o"
+"flashing\stm32f0xx_hal_cortex.o"
+"flashing\stm32f0xx_hal_dma.o"
+"flashing\stm32f0xx_hal_flash.o"
+"flashing\stm32f0xx_hal_i2c_ex.o"
+"flashing\stm32f0xx_hal_pwr_ex.o"
+"flashing\stm32f0xx_hal_tim.o"
+"flashing\stm32f0xx_hal_tim_ex.o"
+"flashing\stm32f0xx_hal_flash_ex.o"
+"flashing\stm32f0xx_hal_rcc.o"
+"flashing\stm32f0xx_hal_gpio.o"
+"flashing\stm32f0xx_hal_rcc_ex.o"
+"flashing\stm32f0xx_hal_i2c.o"
+"flashing\stm32f0xx_hal.o"
+"flashing\stm32f0xx_hal_pwr.o"
+"flashing\stm32f0xx_it.o"
+"flashing\main.o"
+"flashing\stm32f0xx_hal_msp.o"
+--library_type=microlib --strict --scatter "Flashing\Flashing.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Flashing.map" -o Flashing\Flashing.axf

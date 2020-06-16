@@ -1,0 +1,26 @@
+--cpu Cortex-M0
+"usart1_loopback\stm32f0xx_hal_uart_ex.o"
+"usart1_loopback\stm32f0xx_hal_flash.o"
+"usart1_loopback\stm32f0xx_hal_pwr.o"
+"usart1_loopback\stm32f0xx_hal_dma.o"
+"usart1_loopback\stm32f0xx_hal_pwr_ex.o"
+"usart1_loopback\stm32f0xx_hal_tim.o"
+"usart1_loopback\stm32f0xx_hal_gpio.o"
+"usart1_loopback\stm32f0xx_hal_tim_ex.o"
+"usart1_loopback\stm32f0xx_hal_flash_ex.o"
+"usart1_loopback\stm32f0xx_hal_i2c.o"
+"usart1_loopback\stm32f0xx_hal_cortex.o"
+"usart1_loopback\stm32f0xx_hal_uart.o"
+"usart1_loopback\stm32f0xx_hal_rcc_ex.o"
+"usart1_loopback\stm32f0xx_hal.o"
+"usart1_loopback\stm32f0xx_hal_rcc.o"
+"usart1_loopback\stm32f0xx_hal_i2c_ex.o"
+"usart1_loopback\main.o"
+"usart1_loopback\stm32f0xx_it.o"
+"usart1_loopback\stm32f0xx_hal_msp.o"
+"usart1_loopback\startup_stm32f072xb.o"
+"usart1_loopback\system_stm32f0xx.o"
+--library_type=microlib --strict --scatter "USART1_Loopback\USART1_Loopback.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "USART1_Loopback.map" -o USART1_Loopback\USART1_Loopback.axf

@@ -1,0 +1,25 @@
+--cpu Cortex-M0
+"comp1_out\stm32f0xx_hal_msp.o"
+"comp1_out\main.o"
+"comp1_out\stm32f0xx_it.o"
+"comp1_out\stm32f0xx_hal.o"
+"comp1_out\stm32f0xx_hal_flash_ex.o"
+"comp1_out\stm32f0xx_hal_flash.o"
+"comp1_out\stm32f0xx_hal_cortex.o"
+"comp1_out\stm32f0xx_hal_pwr.o"
+"comp1_out\stm32f0xx_hal_comp.o"
+"comp1_out\stm32f0xx_hal_rcc.o"
+"comp1_out\stm32f0xx_hal_pwr_ex.o"
+"comp1_out\stm32f0xx_hal_i2c_ex.o"
+"comp1_out\stm32f0xx_hal_i2c.o"
+"comp1_out\stm32f0xx_hal_tim_ex.o"
+"comp1_out\stm32f0xx_hal_rcc_ex.o"
+"comp1_out\stm32f0xx_hal_gpio.o"
+"comp1_out\stm32f0xx_hal_dma.o"
+"comp1_out\stm32f0xx_hal_tim.o"
+"comp1_out\system_stm32f0xx.o"
+"comp1_out\startup_stm32f072xb.o"
+--library_type=microlib --strict --scatter "COMP1_OUT\COMP1_OUT.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "COMP1_OUT.map" -o COMP1_OUT\COMP1_OUT.axf

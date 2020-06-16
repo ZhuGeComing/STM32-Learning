@@ -1,0 +1,26 @@
+--cpu Cortex-M0
+"voltage_convert\startup_stm32f072xb.o"
+"voltage_convert\stm32f0xx_hal_adc_ex.o"
+"voltage_convert\stm32f0xx_hal_pwr_ex.o"
+"voltage_convert\stm32f0xx_hal_gpio.o"
+"voltage_convert\stm32f0xx_hal_adc.o"
+"voltage_convert\stm32f0xx_hal.o"
+"voltage_convert\stm32f0xx_hal_rcc.o"
+"voltage_convert\stm32f0xx_hal_i2c.o"
+"voltage_convert\stm32f0xx_hal_tim.o"
+"voltage_convert\stm32f0xx_hal_i2c_ex.o"
+"voltage_convert\stm32f0xx_hal_dma.o"
+"voltage_convert\stm32f0xx_hal_pwr.o"
+"voltage_convert\stm32f0xx_hal_flash.o"
+"voltage_convert\stm32f0xx_hal_cortex.o"
+"voltage_convert\stm32f0xx_hal_tim_ex.o"
+"voltage_convert\stm32f0xx_hal_rcc_ex.o"
+"voltage_convert\stm32f0xx_hal_flash_ex.o"
+"voltage_convert\system_stm32f0xx.o"
+"voltage_convert\stm32f0xx_hal_msp.o"
+"voltage_convert\main.o"
+"voltage_convert\stm32f0xx_it.o"
+--library_type=microlib --strict --scatter "Voltage_Convert\Voltage_Convert.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Voltage_Convert.map" -o Voltage_Convert\Voltage_Convert.axf

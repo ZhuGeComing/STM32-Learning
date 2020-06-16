@@ -1,0 +1,24 @@
+--cpu Cortex-M0
+"exti0_pa0\startup_stm32f078xx.o"
+"exti0_pa0\system_stm32f0xx.o"
+"exti0_pa0\stm32f0xx_it.o"
+"exti0_pa0\main.o"
+"exti0_pa0\stm32f0xx_hal_msp.o"
+"exti0_pa0\stm32f0xx_hal_tim.o"
+"exti0_pa0\stm32f0xx_hal_pwr_ex.o"
+"exti0_pa0\stm32f0xx_hal_i2c_ex.o"
+"exti0_pa0\stm32f0xx_hal_rcc.o"
+"exti0_pa0\stm32f0xx_hal.o"
+"exti0_pa0\stm32f0xx_hal_gpio.o"
+"exti0_pa0\stm32f0xx_hal_dma.o"
+"exti0_pa0\stm32f0xx_hal_flash.o"
+"exti0_pa0\stm32f0xx_hal_rcc_ex.o"
+"exti0_pa0\stm32f0xx_hal_cortex.o"
+"exti0_pa0\stm32f0xx_hal_pwr.o"
+"exti0_pa0\stm32f0xx_hal_tim_ex.o"
+"exti0_pa0\stm32f0xx_hal_i2c.o"
+"exti0_pa0\stm32f0xx_hal_flash_ex.o"
+--library_type=microlib --strict --scatter "EXTI0_PA0\EXTI0_PA0.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "EXTI0_PA0.map" -o EXTI0_PA0\EXTI0_PA0.axf

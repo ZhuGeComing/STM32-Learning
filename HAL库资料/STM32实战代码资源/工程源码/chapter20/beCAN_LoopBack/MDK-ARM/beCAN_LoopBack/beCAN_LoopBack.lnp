@@ -1,0 +1,25 @@
+--cpu Cortex-M0
+"becan_loopback\startup_stm32f072xb.o"
+"becan_loopback\system_stm32f0xx.o"
+"becan_loopback\main.o"
+"becan_loopback\stm32f0xx_hal_msp.o"
+"becan_loopback\stm32f0xx_it.o"
+"becan_loopback\stm32f0xx_hal_pwr_ex.o"
+"becan_loopback\stm32f0xx_hal_gpio.o"
+"becan_loopback\stm32f0xx_hal_flash.o"
+"becan_loopback\stm32f0xx_hal_can.o"
+"becan_loopback\stm32f0xx_hal_i2c.o"
+"becan_loopback\stm32f0xx_hal_rcc.o"
+"becan_loopback\stm32f0xx_hal_tim_ex.o"
+"becan_loopback\stm32f0xx_hal.o"
+"becan_loopback\stm32f0xx_hal_pwr.o"
+"becan_loopback\stm32f0xx_hal_dma.o"
+"becan_loopback\stm32f0xx_hal_cortex.o"
+"becan_loopback\stm32f0xx_hal_i2c_ex.o"
+"becan_loopback\stm32f0xx_hal_rcc_ex.o"
+"becan_loopback\stm32f0xx_hal_flash_ex.o"
+"becan_loopback\stm32f0xx_hal_tim.o"
+--library_type=microlib --strict --scatter "beCAN_LoopBack\beCAN_LoopBack.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "beCAN_LoopBack.map" -o beCAN_LoopBack\beCAN_LoopBack.axf

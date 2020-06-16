@@ -1,0 +1,24 @@
+--cpu Cortex-M0
+"pwm_input\startup_stm32f072xb.o"
+"pwm_input\system_stm32f0xx.o"
+"pwm_input\main.o"
+"pwm_input\stm32f0xx_hal_msp.o"
+"pwm_input\stm32f0xx_it.o"
+"pwm_input\stm32f0xx_hal_tim_ex.o"
+"pwm_input\stm32f0xx_hal_pwr.o"
+"pwm_input\stm32f0xx_hal_cortex.o"
+"pwm_input\stm32f0xx_hal_rcc_ex.o"
+"pwm_input\stm32f0xx_hal_flash.o"
+"pwm_input\stm32f0xx_hal_gpio.o"
+"pwm_input\stm32f0xx_hal_dma.o"
+"pwm_input\stm32f0xx_hal_tim.o"
+"pwm_input\stm32f0xx_hal_pwr_ex.o"
+"pwm_input\stm32f0xx_hal_rcc.o"
+"pwm_input\stm32f0xx_hal.o"
+"pwm_input\stm32f0xx_hal_i2c.o"
+"pwm_input\stm32f0xx_hal_i2c_ex.o"
+"pwm_input\stm32f0xx_hal_flash_ex.o"
+--library_type=microlib --strict --scatter "PWM_Input\PWM_Input.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "PWM_Input.map" -o PWM_Input\PWM_Input.axf

@@ -1,0 +1,26 @@
+--cpu Cortex-M0
+"dma_adc1\stm32f0xx_hal_rcc_ex.o"
+"dma_adc1\stm32f0xx_hal_gpio.o"
+"dma_adc1\stm32f0xx_hal_flash_ex.o"
+"dma_adc1\stm32f0xx_hal_i2c_ex.o"
+"dma_adc1\stm32f0xx_hal_pwr_ex.o"
+"dma_adc1\stm32f0xx_hal_flash.o"
+"dma_adc1\stm32f0xx_hal_rcc.o"
+"dma_adc1\stm32f0xx_hal_dma.o"
+"dma_adc1\stm32f0xx_hal_cortex.o"
+"dma_adc1\stm32f0xx_hal_pwr.o"
+"dma_adc1\stm32f0xx_hal_adc.o"
+"dma_adc1\stm32f0xx_hal_i2c.o"
+"dma_adc1\stm32f0xx_hal_tim_ex.o"
+"dma_adc1\stm32f0xx_hal_adc_ex.o"
+"dma_adc1\stm32f0xx_hal.o"
+"dma_adc1\stm32f0xx_hal_tim.o"
+"dma_adc1\main.o"
+"dma_adc1\stm32f0xx_it.o"
+"dma_adc1\stm32f0xx_hal_msp.o"
+"dma_adc1\system_stm32f0xx.o"
+"dma_adc1\startup_stm32f072xb.o"
+--library_type=microlib --strict --scatter "DMA_ADC1\DMA_ADC1.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "DMA_ADC1.map" -o DMA_ADC1\DMA_ADC1.axf

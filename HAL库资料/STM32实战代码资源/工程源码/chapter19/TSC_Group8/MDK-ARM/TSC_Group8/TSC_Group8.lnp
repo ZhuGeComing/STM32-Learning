@@ -1,0 +1,25 @@
+--cpu Cortex-M0
+"tsc_group8\main.o"
+"tsc_group8\stm32f0xx_it.o"
+"tsc_group8\stm32f0xx_hal_msp.o"
+"tsc_group8\system_stm32f0xx.o"
+"tsc_group8\stm32f0xx_hal_flash.o"
+"tsc_group8\stm32f0xx_hal_i2c.o"
+"tsc_group8\stm32f0xx_hal_cortex.o"
+"tsc_group8\stm32f0xx_hal_tim_ex.o"
+"tsc_group8\stm32f0xx_hal_gpio.o"
+"tsc_group8\stm32f0xx_hal_tsc.o"
+"tsc_group8\stm32f0xx_hal_rcc.o"
+"tsc_group8\stm32f0xx_hal.o"
+"tsc_group8\stm32f0xx_hal_pwr.o"
+"tsc_group8\stm32f0xx_hal_tim.o"
+"tsc_group8\stm32f0xx_hal_flash_ex.o"
+"tsc_group8\stm32f0xx_hal_i2c_ex.o"
+"tsc_group8\stm32f0xx_hal_rcc_ex.o"
+"tsc_group8\stm32f0xx_hal_dma.o"
+"tsc_group8\stm32f0xx_hal_pwr_ex.o"
+"tsc_group8\startup_stm32f072xb.o"
+--library_type=microlib --strict --scatter "TSC_Group8\TSC_Group8.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TSC_Group8.map" -o TSC_Group8\TSC_Group8.axf

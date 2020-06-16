@@ -1,0 +1,26 @@
+--cpu Cortex-M0
+"spi1_w25q64\stm32f0xx_hal_msp.o"
+"spi1_w25q64\main.o"
+"spi1_w25q64\stm32f0xx_it.o"
+"spi1_w25q64\system_stm32f0xx.o"
+"spi1_w25q64\stm32f0xx_hal_tim.o"
+"spi1_w25q64\stm32f0xx_hal_dma.o"
+"spi1_w25q64\stm32f0xx_hal_cortex.o"
+"spi1_w25q64\stm32f0xx_hal_tim_ex.o"
+"spi1_w25q64\stm32f0xx_hal_i2c_ex.o"
+"spi1_w25q64\stm32f0xx_hal_rcc_ex.o"
+"spi1_w25q64\stm32f0xx_hal_i2c.o"
+"spi1_w25q64\stm32f0xx_hal_pwr.o"
+"spi1_w25q64\stm32f0xx_hal_pwr_ex.o"
+"spi1_w25q64\stm32f0xx_hal_rcc.o"
+"spi1_w25q64\stm32f0xx_hal_flash.o"
+"spi1_w25q64\stm32f0xx_hal.o"
+"spi1_w25q64\stm32f0xx_hal_spi.o"
+"spi1_w25q64\stm32f0xx_hal_spi_ex.o"
+"spi1_w25q64\stm32f0xx_hal_gpio.o"
+"spi1_w25q64\stm32f0xx_hal_flash_ex.o"
+"spi1_w25q64\startup_stm32f072xb.o"
+--library_type=microlib --strict --scatter "SPI1_W25Q64\SPI1_W25Q64.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "SPI1_W25Q64.map" -o SPI1_W25Q64\SPI1_W25Q64.axf

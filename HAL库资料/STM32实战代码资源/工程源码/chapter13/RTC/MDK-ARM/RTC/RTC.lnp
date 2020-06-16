@@ -1,0 +1,26 @@
+--cpu Cortex-M0
+"rtc\system_stm32f0xx.o"
+"rtc\stm32f0xx_hal.o"
+"rtc\stm32f0xx_hal_rtc.o"
+"rtc\stm32f0xx_hal_flash_ex.o"
+"rtc\stm32f0xx_hal_tim.o"
+"rtc\stm32f0xx_hal_rcc.o"
+"rtc\stm32f0xx_hal_cortex.o"
+"rtc\stm32f0xx_hal_flash.o"
+"rtc\stm32f0xx_hal_tim_ex.o"
+"rtc\stm32f0xx_hal_rcc_ex.o"
+"rtc\stm32f0xx_hal_i2c.o"
+"rtc\stm32f0xx_hal_pwr_ex.o"
+"rtc\stm32f0xx_hal_dma.o"
+"rtc\stm32f0xx_hal_pwr.o"
+"rtc\stm32f0xx_hal_rtc_ex.o"
+"rtc\stm32f0xx_hal_i2c_ex.o"
+"rtc\stm32f0xx_hal_gpio.o"
+"rtc\main.o"
+"rtc\stm32f0xx_hal_msp.o"
+"rtc\stm32f0xx_it.o"
+"rtc\startup_stm32f072xb.o"
+--library_type=microlib --strict --scatter "RTC\RTC.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "RTC.map" -o RTC\RTC.axf

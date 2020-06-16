@@ -1,0 +1,24 @@
+--cpu Cortex-M0
+"standby_mode\system_stm32f0xx.o"
+"standby_mode\stm32f0xx_it.o"
+"standby_mode\main.o"
+"standby_mode\stm32f0xx_hal_msp.o"
+"standby_mode\startup_stm32f072xb.o"
+"standby_mode\stm32f0xx_hal_tim.o"
+"standby_mode\stm32f0xx_hal_cortex.o"
+"standby_mode\stm32f0xx_hal.o"
+"standby_mode\stm32f0xx_hal_flash_ex.o"
+"standby_mode\stm32f0xx_hal_gpio.o"
+"standby_mode\stm32f0xx_hal_flash.o"
+"standby_mode\stm32f0xx_hal_rcc_ex.o"
+"standby_mode\stm32f0xx_hal_i2c.o"
+"standby_mode\stm32f0xx_hal_tim_ex.o"
+"standby_mode\stm32f0xx_hal_i2c_ex.o"
+"standby_mode\stm32f0xx_hal_pwr.o"
+"standby_mode\stm32f0xx_hal_dma.o"
+"standby_mode\stm32f0xx_hal_rcc.o"
+"standby_mode\stm32f0xx_hal_pwr_ex.o"
+--library_type=microlib --strict --scatter "STANDBY_MODE\STANDBY_MODE.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "STANDBY_MODE.map" -o STANDBY_MODE\STANDBY_MODE.axf

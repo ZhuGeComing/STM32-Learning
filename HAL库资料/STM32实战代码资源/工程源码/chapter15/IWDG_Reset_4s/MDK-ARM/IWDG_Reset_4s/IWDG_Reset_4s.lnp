@@ -1,0 +1,25 @@
+--cpu Cortex-M0
+"iwdg_reset_4s\system_stm32f0xx.o"
+"iwdg_reset_4s\startup_stm32f072xb.o"
+"iwdg_reset_4s\stm32f0xx_hal_flash_ex.o"
+"iwdg_reset_4s\stm32f0xx_hal_i2c_ex.o"
+"iwdg_reset_4s\stm32f0xx_hal_tim.o"
+"iwdg_reset_4s\stm32f0xx_hal_pwr.o"
+"iwdg_reset_4s\stm32f0xx_hal.o"
+"iwdg_reset_4s\stm32f0xx_hal_i2c.o"
+"iwdg_reset_4s\stm32f0xx_hal_rcc.o"
+"iwdg_reset_4s\stm32f0xx_hal_iwdg.o"
+"iwdg_reset_4s\stm32f0xx_hal_rcc_ex.o"
+"iwdg_reset_4s\stm32f0xx_hal_gpio.o"
+"iwdg_reset_4s\stm32f0xx_hal_pwr_ex.o"
+"iwdg_reset_4s\stm32f0xx_hal_flash.o"
+"iwdg_reset_4s\stm32f0xx_hal_cortex.o"
+"iwdg_reset_4s\stm32f0xx_hal_tim_ex.o"
+"iwdg_reset_4s\stm32f0xx_hal_dma.o"
+"iwdg_reset_4s\main.o"
+"iwdg_reset_4s\stm32f0xx_hal_msp.o"
+"iwdg_reset_4s\stm32f0xx_it.o"
+--library_type=microlib --strict --scatter "IWDG_Reset_4s\IWDG_Reset_4s.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "IWDG_Reset_4s.map" -o IWDG_Reset_4s\IWDG_Reset_4s.axf
